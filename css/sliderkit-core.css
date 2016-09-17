@@ -1,0 +1,76 @@
+/*  
+ *  sliderkit-core.css
+ *	> Core CSS styles
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2011 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*
+ *  PLUGIN BASICS
+ *  ------------------------------------------------
+ */
+.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
+.sliderkit a,
+.sliderkit a:hover{text-decoration:none;}
+.sliderkit a:focus{outline:1px dotted #000;/*optional*/}
+.sliderkit img{border:0;}
+
+/*---------------------------------
+ *  Navigation
+ *---------------------------------*/
+.sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center;}
+
+/* Nav > Clip */
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:0 auto;}
+.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;}
+.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
+
+/*---------------------------------
+ *  Buttons
+ *---------------------------------*/
+.sliderkit .sliderkit-btn{z-index:10;}
+
+/*---------------------------------
+ *  Panels
+ *---------------------------------*/
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
+.sliderkit .sliderkit-panel-active{z-index:5;}
+.sliderkit .sliderkit-panel-old{z-index:4;}
+
+/* Panels > Overlay */
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+
+
+/*---------------------------------
+ *	News slider > Vertical
+ *---------------------------------*/			
+.newslider-vertical{width:560px;height:165px;}
+
+/* Nav */
+.newslider-vertical .sliderkit-nav{width:200px;height:165px;}
+.newslider-vertical .sliderkit-nav-clip li{height:50px;width:190px;margin-bottom:5px;padding-right:10px;}
+.newslider-vertical .sliderkit-nav-clip li.sliderkit-selected{background:transparent url("../images/newslider-arrow.gif") no-repeat right center;}
+.newslider-vertical .sliderkit-nav-clip li a{height:37px;width:180px;padding:13px 0 0 10px;text-align:left;font-size:1.3em;color:#fff;text-decoration:none;background:#00668d;}
+.newslider-vertical .sliderkit-nav-clip li a:hover,
+.newslider-vertical .sliderkit-nav-clip li a:focus{color:#fff;}
+
+/* Panel */
+.newslider-vertical .sliderkit-panels{position:absolute;left:200px;width:358px;height:158px;overflow:hidden;border:1px solid #ccc;}
+.newslider-vertical .sliderkit-panel{left:0;top:0;width:338px;height:138px;padding:10px;background:#fff;}
+
+/* News block */
+.newslider-vertical .sliderkit-news h3,
+.newslider-vertical .sliderkit-news h3 a{color:#000;font-weight:bold;}
+.newslider-vertical .sliderkit-news h3{font-size:1.2em;margin:0 0 15px;}
+.newslider-vertical .sliderkit-news img{float:right;width:130px;height:auto;margin:0 0 0 10px;overflow:hidden;}
+.newslider-vertical .sliderkit-news p{margin:0;}
+.newslider-vertical .sliderkit-news-readmore{position:absolute;right:10px;bottom:10px;}
