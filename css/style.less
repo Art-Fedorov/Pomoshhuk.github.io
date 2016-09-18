@@ -58,7 +58,7 @@ a{
 		{
 
 			color: dimgrey;
-			font-family: BigNoodleTitling,Arial,sans-serif;
+			font-family: 'BigNoodleTitling',Arial,sans-serif;
 			font-size: 40px;
 			font-weight: 400;
 			line-height: 40px;
@@ -93,7 +93,7 @@ a{
 					top:0; bottom:0;
 					left: 0; right: 0;
 					color: #787878;
-					font-family: BigNoodleTitling,Arial,sans-serif;
+					font-family: 'BigNoodleTitling',Arial,sans-serif;
 					font-size: 72px;
 					font-weight: 400;
 				}
@@ -149,7 +149,7 @@ a{
 	position: relative;
 	display: inline-block;
 	color: #3d3d3d;
-	font-family: BigNoodleTitling;
+	font-family: 'BigNoodleTitling',Arial,sans-serif;
 	font-weight: 400;}
 .header__hr{
 	display: block;
@@ -358,11 +358,9 @@ margin-bottom:20px;
 height:20px;
 clear:both;
 }
-
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
 display:none;
 }
-
 .nbs-flexisel-container {
     position:relative;
     max-width:100%;
@@ -375,7 +373,6 @@ display:none;
     list-style-type:none;   
     text-align:center;  
 }
-
 .nbs-flexisel-inner {
     position: relative;
     overflow: hidden;
@@ -383,7 +380,6 @@ display:none;
     width:100%;
 
 }
-
 .nbs-flexisel-item {
     float:left;
     margin:0px;
@@ -410,22 +406,15 @@ display:none;
     z-index: 4;
     top:0;
 }
-
 .nbs-flexisel-nav-left {
     left: 0px;
 }
-
-
-
 .disabled {
     opacity: 0.4;
 }
-
 .nbs-flexisel-nav-right {
     right: 0px;    
 }
-
-
 .nbs-flexisel-nav-right.disabled {
     opacity: 0.4;
 }
@@ -600,6 +589,13 @@ div.height{
 	{
 		.features-row{
 			max-width:400px;
+			margin: 0 auto;
+		}
+	}
+	@media all and (max-width:450px)
+	{
+		.features-row{
+			max-width:200px;
 			margin: 0 auto;
 		}
 	}
@@ -822,6 +818,16 @@ div.height{
 			}
 		}
 	}
+	@media all and (max-width:467px)
+	{
+		.wrapper{
+			max-width:500px; margin: 0 auto;
+			.plan-item:not(:nth-child(1)){
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
 }/*end .plan*/
 
 .touch{
@@ -915,7 +921,7 @@ div.height{
 			display: block;
 		}
 		.link{
-			font-family: BigNoodleTitling,Arial,sans-serif;
+			font-family: 'BigNoodleTitling',Arial,sans-serif;
 			.lsp();
 			font-size: 24px;
 			font-weight: 400;
