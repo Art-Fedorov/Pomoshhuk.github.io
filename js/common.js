@@ -51,7 +51,7 @@ $(function()
     wow.init();
   }
   addwow("features__item","zoomIn");
-  addwow("plan-item","fadeInUp",100,"2s");
+  addwow("plan-item","fadeInRight",100,"2s");
   addwow("blog-item","slideInLeft",0,'1s');
 
 })
