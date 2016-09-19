@@ -1,5 +1,5 @@
-
-$(window).load(function() {
+$(function()
+{
   $(".flexisel").flexisel({
     visibleItems: 3,
     itemsToScroll: 3,
@@ -29,10 +29,6 @@ $(window).load(function() {
       }
     }
   });
-});
-
-$(function()
-{
   function addwow(boxClass,animateClass,offset=0,duration='1s',delay='.3s'){
     var wow = new WOW(
     {
