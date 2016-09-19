@@ -32,10 +32,11 @@ $(window).load(function() {
 });
 $(function()
 {
-	$('body').on('change','.flexisel',function(){
-		console.log('asd');
-		var top= $('.nbs-flexisel-nav-right .arrow').css('top');
-		console.log(top);
-	});
+	
+  $(".parallax").css("height",$(window).height()/1.3);
+  $(window).resize(function(){
+    $(".parallax").css("height",$(window).height()/1.3);
+  });
+
 
 });
