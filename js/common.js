@@ -33,12 +33,6 @@ $(window).load(function() {
 
 $(function()
 {
-	
-  $(".parallax").css("height",$(window).height()/1.3);
-  $(window).resize(function(){
-    $(".parallax").css("height",$(window).height()/1.3);
-  });
-
   function addwow(boxClass,animateClass,offset=0,duration='1s',delay='.3s'){
     var wow = new WOW(
     {
@@ -50,6 +44,18 @@ $(function()
     $('boxClass').data('wow-duration',duration).data(delay,'2s');
     wow.init();
   }
+	function parallax(selector,height=0){
+    if (height!=0) $(selector).css("height",height);
+  }
+  function resizeParallax(){
+    parallax('.parallax',$(window).height()/1.4);
+  }
+  resizeParallax();
+  $(window).resize(function(){
+    resizeParallax();
+  });
+
+  
   addwow("features__item","zoomIn");
   addwow("plan-item","fadeInRight",100,"2s");
   addwow("blog-item","slideInLeft",0,'1s');
