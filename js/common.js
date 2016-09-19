@@ -30,6 +30,7 @@ $(window).load(function() {
     }
   });
 });
+
 $(function()
 {
 	
@@ -38,5 +39,19 @@ $(function()
     $(".parallax").css("height",$(window).height()/1.3);
   });
 
+  function addwow(boxClass,animateClass,offset=0,duration='1s',delay='.3s'){
+    var wow = new WOW(
+    {
+      boxClass:     boxClass,   
+      animateClass: 'animated '+animateClass, 
+      offset:offset,
+      scrollContainer: null 
+    });
+    $('boxClass').data('wow-duration',duration).data(delay,'2s');
+    wow.init();
+  }
+  addwow("features__item","zoomIn");
+  addwow("plan-item","fadeInUp",100,"2s");
+  addwow("blog-item","slideInLeft",0,'1s');
 
-});
+})
