@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Portfolio</title>
 
-
+  <script type="text/javascript">
+    var start_animate=false;
+  </script>
   
 	<!-- Bootstrap -->
 	<style>
@@ -14,9 +16,9 @@
 
   <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
 	<style></style>
-
+  
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
-	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
 	
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
@@ -26,6 +28,11 @@
 
 </head>
 <body>
+  </script>
+  <!-- <div class="loader">
+    <div class="loader_inner"></div>
+  </div> -->
+
 	<section class="header">
 		<nav class="navbar navbar-default">
 		  <div class="container">
@@ -67,12 +74,12 @@
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">		      
 				      <div class="carousel-caption">
-				      	WE ARE CREATIVE
+				      	Я Креативен { Нет }
 				      </div>
 				    </div>
 				    <div class="item">
 				      <div class="carousel-caption">
-								Slider Lorem info
+								Зато честен и трудолюбив, обожаю ВЕБ
 				      </div>
 				    </div>
 				  </div>
@@ -95,36 +102,37 @@
 			<div class="row">
 				<div class="col-md-12 text-center ">
 					<div class="header-title">
-						<h1 class="header__text">about us</h1>
+						<h1 class="header__text">О работе</h1>
 						<div class="header__hr"></div>
 					</div>
 					<p class="col-md-offset-2 col-md-8 paragraph">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					Данный сайт является работой-портфолио. Шаблон psd был скачан с 
+          <a href="http://psd-html-css.ru/templates/boostfolia-odnostranichnyy-sayt-psd">ЭТОГО РЕСУРСА</a>.
+
+          </p>
 				</div>
 				<div class="table row">
 					<div class="col-sm-4 text-center table__cell">
 							<div class="box">
 							<span class="pe-7s-paint box__svg"></span>
-							<h3 class="box__title">Creative design</h3>
-							<p class="box__content paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, molestiae.</p>
+							<h3 class="box__title">Стандартный дизайн</h3>
+							<p class="box__content paragraph">Так как этот макет я нашел в открытом доступе, это означает, 
+              что дизайн у него самый обыкновенный</p>
 						</div>
 					</div>
 						<div class="col-sm-4 text-center table__cell">
 						<div class="box">
 							<span class="pe-7s-portfolio box__svg"></span>
-							<h3 class="box__title">Unique portfolio</h3>
-							<p class="box__content paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus architecto vitae commodi modi tempora odio.
-						</div>.</p>
+							<h3 class="box__title">Нет портфолио</h3>
+							<p class="box__content paragraph">
+                Я взял psd из интернета, и сверстал его, чтобы мне дали работу для нормального портфолио
+              </p>
+						</div>
 					</div>
 					<div class="col-sm-4 text-center table__cell">
 						<div class="box">
 							<span class="pe-7s-loop box__svg"></span>
-							<h3 class="box__title">Infinite updates</h3>
+							<h3 class="box__title">Фраза из шаблона</h3>
 							<p class="box__content paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, molestiae.</p>
 						</div>
 					</div>
@@ -140,8 +148,10 @@
 		<div class="container-fluid">
 			<div class="row video-row">
 				<div class="col-md-6 text-center video__left">
-					<h1 class="video__title__text">watch behind the SCENE</h1>
-					<p class="video__content video__content__text">Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+					<h1 class="video__title__text">Посмотри за кулисы</h1>
+					<p class="video__content video__content__text">
+          Шучу, закулисами ничего нет, я открытый человек, отвечу на все ваши вопросы
+          </p>
 					<button class="video__button">Play now</button>
 				</div>
 				<div class="col-md-6 hidden-sm hidden-xs video__right">
@@ -156,10 +166,11 @@
 			<div class="row">
 				<div class="col-md-12 text-center top">
 					<div class="header-title">
-						<h1 class="header__text">Our works</h1>
+						<h1 class="header__text">Тут будут мои работы</h1>
 						<div class="header__hr"></div>
 					</div>
-					<p class="col-md-offset-2 col-md-8 paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<p class="col-md-offset-2 col-md-8 paragraph">Ниже расположена менюшка из шаблона, на самом деле я не собираюсь становиться
+          фотографом или дизайнером. Наоборот я ориентируюсь в сторону BACK-ENDа</p>
 				</div>
 				<div class="col-md-12 text-center menu">
 					<ul class="menu-works">
@@ -191,39 +202,39 @@
 				<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="37" height="36" viewBox="0 0 37 36">
  					 	<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAMAAAA5HAOUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALCwseHh4sLCwjIyM/Pz89PT08PDwkJCRaWlpeXl5PT087OzsZGRlXV1dhYWFgYGBVVVUHBwc6OjplZWVjY2NdXV0UFBRnZ2dCQkIbGxtkZGRpaWlJSUkqKiptbW1ra2srKytwcHAWFhZycnJbW1s5OTkPDw9ubm51dXVHR0c1NTV3d3c4ODgICAhMTExEREQvLy9OTk56enonJycGBgYcHBwVFRUKCgoQEBB9fX0TExMwMDBGRkZZWVlYWFhUVFRTU1NSUlJKSkpmZmYuLi5fX19RUVEFBQUtLS0gICCFhYUpKSmDg4OAgIB8fHyBgYFDQ0NsbGyLi4sfHx+SkpKIiIiHh4eMjIyEhIRqampxcXE2NjYDAwMiIiJ+fn5vb290dHQlJSU0NDR4eHiGhoZ/f3////+ir7b/AAAAEHRSTlMAIEAQMI/fYL/vn8+AcK9Q5wwUgwAAAAFiS0dEd0Zk+dcAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHwSURBVDjLhdT9Q9JAGAfwbWxjwMAvUWOBgGugUorOpEIJM19QCzUrWy+mWVFKL/b693e3DWS6W8+Pu8+ee+6eu+O4wOCFCPefECUZEMJNVAGNUCXIlKSvZEIU7+S5ek3LZtkqGiNGv57La9lRlorEiSkUS2M5g60iCeCGWa4QNZ5lKZGgCWPSVdVRM1DxpKSbt6Y8NR2s6HS1mdm+ypuBiuyANXeujEClArfnh1TdvHNZCcDdez5VDVCkK6WGTy1cVklgselX+ftERYRhGkNr3lOlJbr34w+WC4rTdshqv3vAwxVXLa4WyMgaWct6xrJqtfYGkIjzVCWwueWpill4pD/uFOvbO0XD2H2yt6eRv2KE8cBTVz3Tni/su3UN1AsdY0jS2u1mP9eg+nP10s2l4NVrhpp+o7dtpGhdQOeAmauqbdBMtKzK25AZ24i53TkMU/YmPHXEVjrkEU+xqn9Hi3e6JALH79m5PkBxGkTW+JGltIyNqKNSSHc/Bap6brsGaXAElz+fXFD1/fLpXG/yy1dvQo4jl/Vbs/u9QdXU8enszFmv0fhxVur8bJGTIw5dDftX+Xf3z8nB0d+tw155p2Otp53jJQ09Yyr9YJOHxrKsdroFL2SJ999ZSYYvEnE18DUUo2pcUZSUqiYF/uLgPz6cisTr19zGAAAAAElFTkSuQmCC" width="37" height="36"/>
-						</svg><span style="margin-left:10px"> themeforest2</span>
+						</svg><span style="margin-left:10px"> Лапка2</span>
 						</div>
 					</li>
 					<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="49" height="54" viewBox="0 0 49 54">
   					<image xlink:href="data:img/png;base64,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" width="49" height="54"/>
-						</svg><span style="margin-left:10px"> graphicriver2</span>
+						</svg><span style="margin-left:10px"> Рыбка2</span>
 						</div>
 					</li>
 					<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="43" height="43" viewBox="0 0 43 43">
 					  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAAANDQ0NDQ0NDQ0NDQ0NDQ0AAAAAAAANDQ0yMjJ+fn6RkZFubm48PDwTExMNDQ0NDQ0AAAAAAAAAAAAAAAAEBARSUlL////c3NwNDQ0EBAQAAAANDQ2/v7+vr68NDQ3Hx8dqamoAAAANDQ0NDQ0NDQ14eHgaGhoMDAwAAAAAAACNjY1FRUUAAADw8PDHx8f///8vLy8AAACSkpJVVVW6urqZmZkAAAAICAjh4eFkZGQaGholJSUAAAB0dHQRERFISEiGhoYhISFmZmaEhITX19fMzMwAAACysrIyMjIpKSmjo6NfX1+urq7p6elnZ2cCAgIhISENDQ0NDQ0AAAAJCQkkJCQjIyMFBQV1dXWPj49ZWVlmZmY0NDQDAwN0dHSHh4c5OTkLCwtxcXEODg6GhoaIiIifn58eHh5RUVE3Nzd3d3e8vLwsLCxKSkoSEhJFRUVgYGATExMYGBg6OjpLS0svLy84ODiAgIBpaWkZGRkCAgIKCgoICAg2Njavr6+Li4soKCidnZ2SkpIdHR1WVlbHx8doaGiOjo6mpqaUlJSFhYVtbW1lZWVISEgbGxs+Pj5HR0d4eHghISGBgYFYWFhycnKKiooEBAQHBwc/Pz9QUFBwcHAGBgZhYWF9fX3BwcFPT0////+aZnaOAAAAU3RSTlMAUM+/cCAgQIDPloyfxvWfEBCf79+Ps2Zw7+/PQHmMMIP1YN9gr9nsr4C/58+viJCA11DfwLCgcPeIuOffMLDvx6gQx/eYoI+499mfqZZwxr/ij5+jEs4AAAABYktHRBcL1piPAAAACXBIWXMAAAsSAAALEgHS3X78AAACvElEQVQ4y43V/T9TURwH8CNshdnu7sJaklHa1rgkGzN6UEp6PN8RXYWiRQ+GcsqEWZuo9OAhlPhPO+fe8Uqve+58frr39Xrv7Dx8z/cipJWMQ5gmMytbeTMYDYibw/hITm5unikfmy2CVQQA21EOteCCQiVFBfn2YwChDqodgqY9josLUznRie9DqKv7QQgcmrYE56boyVK5Bz9k+FEInJq4zLRH5d6+flBG5gxcjvN2qSw/xk8YHgDQXp05P0ehg08pDj8bYphnLafoVpyW5eHnFIdfvHxFMc+yLa4YiSh4BI+OAYuDZ1H2GYw7x8dfv8EThLx9R62Ta5FrsnM8HI1OvZ8mhMyMgZtPkRFmY3NxgA8JhpPg0rEGgBmGI/OJj4R4zoqCDvZCeCHWBRGyuEg8lVV680VugPCnBfhMZ+CplKRqL5/WgJovhJyjVKoV+dYGostlA5j1nJdY6rhngVxgVRbj89dLaazgNu5uR21au/dk9VcptkHDGv//lRhQZtGo7IOBXT/RakCCz81Wzh7/SVAM0JGblP11UtmxxAg0X7hYJ9U1NYvB/RgaA2BF6FIQ4OvAALUwdVlKpXp//Qk+r9epHs+3boXGv7dckXTXLEBIpT+WCWm5qtom7TMyQkcvpUOwQsgiIQqu97dy7BKl4dXJJJlPrJEWevRVAU6TEejf/+ynnW5iPhGjJXVNavA7eKXqhnW8EZE3R/t+JUly5bpfdHGrOvgbbw3L8p+tfqUERZ9O/ZfgDdowBrdXMcS71nSvIMpsu0FH3R7cxPG52A47Hm5YA2VY3sRzseUoGHWsuY12OYrlntm1nSjoXm17O2uJN0vlsXV1bTrfhlRfvnUb33G3Bo020LmuuEj9NFSY1XenWJNuXJPdsnuQfFumfHNMOAOlTxZuL865ay8/AEXoHq0bc/ZB5F+Ohtcy5XhNxwAAAABJRU5ErkJggg==" width="43" height="43"/>
 						</svg>
-						<span style="margin-left:10px"> videohive2</span>
+						<span style="margin-left:10px"> Пчелка2</span>
 						</div>
 					</li>
 					<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="37" height="36" viewBox="0 0 37 36">
   					<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAMAAAA5HAOUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALCwseHh4sLCwjIyM/Pz89PT08PDwkJCRaWlpeXl5PT087OzsZGRlXV1dhYWFgYGBVVVUHBwc6OjplZWVjY2NdXV0UFBRnZ2dCQkIbGxtkZGRpaWlJSUkqKiptbW1ra2srKytwcHAWFhZycnJbW1s5OTkPDw9ubm51dXVHR0c1NTV3d3c4ODgICAhMTExEREQvLy9OTk56enonJycGBgYcHBwVFRUKCgoQEBB9fX0TExMwMDBGRkZZWVlYWFhUVFRTU1NSUlJKSkpmZmYuLi5fX19RUVEFBQUtLS0gICCFhYUpKSmDg4OAgIB8fHyBgYFDQ0NsbGyLi4sfHx+SkpKIiIiHh4eMjIyEhIRqampxcXE2NjYDAwMiIiJ+fn5vb290dHQlJSU0NDR4eHiGhoZ/f3////+ir7b/AAAAEHRSTlMAIEAQMI/fYL/vn8+AcK9Q5wwUgwAAAAFiS0dEd0Zk+dcAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHwSURBVDjLhdT9Q9JAGAfwbWxjwMAvUWOBgGugUorOpEIJM19QCzUrWy+mWVFKL/b693e3DWS6W8+Pu8+ee+6eu+O4wOCFCPefECUZEMJNVAGNUCXIlKSvZEIU7+S5ek3LZtkqGiNGv57La9lRlorEiSkUS2M5g60iCeCGWa4QNZ5lKZGgCWPSVdVRM1DxpKSbt6Y8NR2s6HS1mdm+ypuBiuyANXeujEClArfnh1TdvHNZCcDdez5VDVCkK6WGTy1cVklgselX+ftERYRhGkNr3lOlJbr34w+WC4rTdshqv3vAwxVXLa4WyMgaWct6xrJqtfYGkIjzVCWwueWpill4pD/uFOvbO0XD2H2yt6eRv2KE8cBTVz3Tni/su3UN1AsdY0jS2u1mP9eg+nP10s2l4NVrhpp+o7dtpGhdQOeAmauqbdBMtKzK25AZ24i53TkMU/YmPHXEVjrkEU+xqn9Hi3e6JALH79m5PkBxGkTW+JGltIyNqKNSSHc/Bap6brsGaXAElz+fXFD1/fLpXG/yy1dvQo4jl/Vbs/u9QdXU8enszFmv0fhxVur8bJGTIw5dDftX+Xf3z8nB0d+tw155p2Otp53jJQ09Yyr9YJOHxrKsdroFL2SJ999ZSYYvEnE18DUUo2pcUZSUqiYF/uLgPz6cisTr19zGAAAAAElFTkSuQmCC" width="37" height="36"/>
-						</svg><span style="margin-left:10px"> themeforest</span>
+						</svg><span style="margin-left:10px"> Лапка</span>
 						</div>
 					</li>
 					<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="49" height="54" viewBox="0 0 49 54">
   					<image xlink:href="data:img/png;base64,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" width="49" height="54"/>
-						</svg><span style="margin-left:10px"> graphicriver</span>
+						</svg><span style="margin-left:10px"> Рыбка</span>
 						</div>
 					</li>
 					<li>
 						<div class="height"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="43" height="43" viewBox="0 0 43 43">
   					<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAAANDQ0NDQ0NDQ0NDQ0NDQ0AAAAAAAANDQ0yMjJ+fn6RkZFubm48PDwTExMNDQ0NDQ0AAAAAAAAAAAAAAAAEBARSUlL////c3NwNDQ0EBAQAAAANDQ2/v7+vr68NDQ3Hx8dqamoAAAANDQ0NDQ0NDQ14eHgaGhoMDAwAAAAAAACNjY1FRUUAAADw8PDHx8f///8vLy8AAACSkpJVVVW6urqZmZkAAAAICAjh4eFkZGQaGholJSUAAAB0dHQRERFISEiGhoYhISFmZmaEhITX19fMzMwAAACysrIyMjIpKSmjo6NfX1+urq7p6elnZ2cCAgIhISENDQ0NDQ0AAAAJCQkkJCQjIyMFBQV1dXWPj49ZWVlmZmY0NDQDAwN0dHSHh4c5OTkLCwtxcXEODg6GhoaIiIifn58eHh5RUVE3Nzd3d3e8vLwsLCxKSkoSEhJFRUVgYGATExMYGBg6OjpLS0svLy84ODiAgIBpaWkZGRkCAgIKCgoICAg2Njavr6+Li4soKCidnZ2SkpIdHR1WVlbHx8doaGiOjo6mpqaUlJSFhYVtbW1lZWVISEgbGxs+Pj5HR0d4eHghISGBgYFYWFhycnKKiooEBAQHBwc/Pz9QUFBwcHAGBgZhYWF9fX3BwcFPT0////+aZnaOAAAAU3RSTlMAUM+/cCAgQIDPloyfxvWfEBCf79+Ps2Zw7+/PQHmMMIP1YN9gr9nsr4C/58+viJCA11DfwLCgcPeIuOffMLDvx6gQx/eYoI+499mfqZZwxr/ij5+jEs4AAAABYktHRBcL1piPAAAACXBIWXMAAAsSAAALEgHS3X78AAACvElEQVQ4y43V/T9TURwH8CNshdnu7sJaklHa1rgkGzN6UEp6PN8RXYWiRQ+GcsqEWZuo9OAhlPhPO+fe8Uqve+58frr39Xrv7Dx8z/cipJWMQ5gmMytbeTMYDYibw/hITm5unikfmy2CVQQA21EOteCCQiVFBfn2YwChDqodgqY9josLUznRie9DqKv7QQgcmrYE56boyVK5Bz9k+FEInJq4zLRH5d6+flBG5gxcjvN2qSw/xk8YHgDQXp05P0ehg08pDj8bYphnLafoVpyW5eHnFIdfvHxFMc+yLa4YiSh4BI+OAYuDZ1H2GYw7x8dfv8EThLx9R62Ta5FrsnM8HI1OvZ8mhMyMgZtPkRFmY3NxgA8JhpPg0rEGgBmGI/OJj4R4zoqCDvZCeCHWBRGyuEg8lVV680VugPCnBfhMZ+CplKRqL5/WgJovhJyjVKoV+dYGostlA5j1nJdY6rhngVxgVRbj89dLaazgNu5uR21au/dk9VcptkHDGv//lRhQZtGo7IOBXT/RakCCz81Wzh7/SVAM0JGblP11UtmxxAg0X7hYJ9U1NYvB/RgaA2BF6FIQ4OvAALUwdVlKpXp//Qk+r9epHs+3boXGv7dckXTXLEBIpT+WCWm5qtom7TMyQkcvpUOwQsgiIQqu97dy7BKl4dXJJJlPrJEWevRVAU6TEejf/+ynnW5iPhGjJXVNavA7eKXqhnW8EZE3R/t+JUly5bpfdHGrOvgbbw3L8p+tfqUERZ9O/ZfgDdowBrdXMcS71nSvIMpsu0FH3R7cxPG52A47Hm5YA2VY3sRzseUoGHWsuY12OYrlntm1nSjoXm17O2uJN0vlsXV1bTrfhlRfvnUb33G3Bo020LmuuEj9NFSY1XenWJNuXJPdsnuQfFumfHNMOAOlTxZuL865ay8/AEXoHq0bc/ZB5F+Ohtcy5XhNxwAAAABJRU5ErkJggg==" width="43" height="43"/>
 						</svg>
-						<span style="margin-left:10px"> videohive</span>
+						<span style="margin-left:10px"> Пчелка</span>
 						</div>
 					</li>
 					
@@ -237,10 +248,13 @@
 			<div class="row">
 				<div class="col-md-12 text-center top">
 					<div class="header-title">
-						<h1 class="header__text">who we are</h1>
+						<h1 class="header__text">Кто я есть</h1>
 						<div class="header__hr"></div>
 					</div>
-					<p class="col-md-offset-2 col-md-8 paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<p class="col-md-offset-2 col-md-8 paragraph">
+            Меня зовут Артем, и я начинающий верстальщик. У меня сейчас мало заказов и много свободного времени, 
+            именно поэтому тут этот текст, а не текст из шаблона
+          </p>
 				</div>
 				<div class="table employee ">
 
@@ -248,46 +262,58 @@
 						<div class="box">
 							<div class="employee-profile__avatar"></div>
 							<div class="employee-profile__name">
-								Artem Fedorov
+								Артем Федоров
 							</div>
 							<div class="employee-profile__place">
-								web developer
+								Front-End разработчик
 							</div>
 							<div class="employee-profile__social social">
-								<a class="fa fa-vk"></a>
-								<a class="fa fa-twitter"></a>
-								<a class="fa fa-facebook"></a>
+								<a class="fa fa-vk" href="https://vk.com/sometema"></a>
+                <a class="fa fa-twitter" href="https://vk.com/sometema"></a>
+                <a class="fa fa-facebook" href="https://vk.com/sometema"></a>
 							</div>
 							<div class="employee-profile__points"></div>
 						</div>
 					</div>
 					<div class="col-md-8 col-xs-12 table__cell employee-skills">
 						<div class="box">
-							<h2 class="employee-skills__title">my skills</h2>
+							<h2 class="employee-skills__title">Мои умения</h2>
 							<p class="employee-skills__content">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quisquam accusantium velit, recusandae.</p>
+                Ниже продемонстрирован пример верстки таблицы. Значения для прогрессбара заполнены с помощью jQuery скрипта.
+                Также, примерно в таких пропорциях я и представляю свои умения.
+							</p>
 
 							<table class="">
 									<tr>
-										<td>photoshopasdad</td>
-										<td><div></div></td>
-										<td>88%</td>
+										<td>html5</td>
+										<td><div><div class="inner"></div></div></td>
+										<td>90%</td>
 									</tr>
 									<tr>
-										<td>photoshop shop shop</td>
-										<td><div></div></td>
-										<td>88%</td>
+										<td>css3</td>
+										<td><div><div class="inner"></div></div></td>
+										<td>92%</td>
 									</tr>
 									<tr>
-										<td>photoshop</td>
-										<td><div></div></td>
-										<td>88%</td>
+										<td>Bootstrap</td>
+										<td><div><div class="inner"></div></div></td>
+										<td>80%</td>
 									</tr>
 									<tr>
-										<td>photoshop</td>
-										<td><div></div></td>
-										<td>88%</td>
+										<td>Sass</td>
+										<td><div><div class="inner"></div></div></td>
+										<td>75%</td>
 									</tr>
+                  <tr>
+                    <td>Gulp</td>
+                    <td><div><div class="inner"></div></div></td>
+                    <td>65%</td>
+                  </tr>
+                  <tr>
+                    <td>jQuery</td>
+                    <td><div><div class="inner"></div></div></td>
+                    <td>87%</td>
+                  </tr>
 								</table>	
 						</div>
 					</div>
@@ -300,7 +326,7 @@
 		<div class="container">
 			<div class="row features-row">
 				<div class="col-xs-12 text-center header-title-dark">
-					<h1 class="header-title-dark__text">some features</h1></div>
+					<h1 class="header-title-dark__text">Просто блок с параллаксом</h1></div>
 					<div class="col-xs-3 text-center features__item">
 						<span class="pe pe-7s-monitor"></span>
 						<p class="features__item-text">Shortcodes</p>
@@ -331,7 +357,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="header-title">
-						<h1 class="header__text">blog posts</h1>
+						<h1 class="header__text">Блок с блогами</h1>
 						<div class="header__hr"></div>
 					</div>
 					<p class="col-md-offset-2 col-md-8 paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta maxime magni nam sit reprehenderit magnam dolorem voluptatum ipsam, nulla eum, ullam vitae soluta a nihil.
@@ -432,7 +458,7 @@
 		<div class="container">
 			<div class="row features-row">
 				<div class="col-xs-12 text-center header-title-dark">
-					<h1 class="header-title-dark__text">choose plan</h1>
+					<h1 class="header-title-dark__text">Блок с плавным наведением</h1>
 				</div>
 				
 			</div>
@@ -502,7 +528,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="header-title">
-						<h1 class="header__text">get in touch</h1>
+						<h1 class="header__text">Отправка на мыло</h1>
 						<div class="header__hr"></div>
 					</div>
 					<p class="col-md-offset-2 col-md-8 paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta maxime magni nam sit reprehenderit magnam dolorem voluptatum ipsam, nulla eum, ullam vitae soluta a nihil.
@@ -534,16 +560,16 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 text-center map">
-					<a href="#"><h2 class="map__text">Locate on map <span class="pe-7s-angle-down pe"></span></h2></a>
+					<a href="#"><h2 class="map__text">Надо припилить карту <span class="pe-7s-angle-down pe"></span></h2></a>
 				</div>
 				<div class="col-xs-12 text-center info">
 					<a href="#" class="link"><img src="img/log.png" alt="logo"></a>
 					<a href="#" class="link">Portfolio</a>
-					<p class="footer__text">made with love by creative product</p>
+					<p class="footer__text">Сделано от нефиг делать</p>
 					<div class="social">
-								<a class="fa fa-vk"></a>
-								<a class="fa fa-twitter"></a>
-								<a class="fa fa-facebook"></a>
+								<a class="fa fa-vk" href="https://vk.com/sometema"></a>
+								<a class="fa fa-twitter" href="https://vk.com/sometema"></a>
+								<a class="fa fa-facebook" href="https://vk.com/sometema"></a>
 					</div>
 				</div>
 			</div>
@@ -579,7 +605,11 @@
 		{"src" : "js/libs.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-	</script>
+	
+  </script>
+  <script type="text/javascript">
+
+  </script>
 
 </body>
 </html>
