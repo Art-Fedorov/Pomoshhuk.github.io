@@ -92,8 +92,6 @@ $(function()
   $(".features__item").css(duration('.7s')).css(delay('0')).animated("zoomIn",'zoomOut');
   $(".plan-item").animated("fadeInRight",'fadeOutRight');
   $(".blog-item").animated("slideInLeft",'slideOutRight');
-  $('.header__text').animated('slideInLeft','fadeOutRight');
-  $('.header__hr').animated('slideInRight','fadeOutLeft');
   $('.about .header-title+.paragraph').animated('fadeInUp','fadeOutDown');
   $('.about .table__cell:nth-child(3n-2)').animated('slideInLeft','fadeOutRight');
   $('.about .table__cell:nth-child(3n)').animated('slideInRight','fadeOutLeft');
