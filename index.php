@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Хамелеон</title>
+
+
+  <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+<body>
+
+<header class="header">
+	<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="logo" href="#">Atlaide<span class="black">tev.lv</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-top">
+          <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control">
+                  <button type="submit" class="btn btn-default submit">Найти</button>
+                </div> 
+              </form>
+              <ul class="lang">
+                <li class="lang-item"><a href="">lv</a></li>
+                <li class="lang-item"><a href="">ru</a></li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
+
+    <nav class="navbar navbar-default navbar-menu">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="container" id="navbar-menu">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Электроника</a></li>
+                <li><a href="#">Мобильные телефоны</a></li>
+                <li><a href="#">Компьютеры</a></li>
+                <li><a href="#">Фото и видео камеры</a></li>
+                <li><a href="#">Авто</a></li>
+                <li><a href="#">Бытовая техника</a></li>
+                <li><a href="#">Спорт и отдых</a></li>
+                <li><a href="#">Дом и сад</a></li>
+                <li><a href="#">Еще</a></li>         
+              </ul>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    
+	</div>
+</header>
+
+<div class="categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center allcat">
+        <button type="button" class="hamb">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+        <p class="sub">Все категории</p>
+      </div>
+    </div>
+    <div class="row cat">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория asd asd asd </a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="cat-item">
+          <div class="header">
+            <div class="img"></div>
+            <h2 class="text">Компьютеры</h2>
+          </div>
+          <ul class="cat-list">
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+            <li class="list-item"><a href="">Подкатегория</a></li>
+          </ul>
+          <div class="viewall text-left"><a href="">Посмотреть все</a></div>
+        </div>
+      </div>
+      <div class="col-xs-12 text-center up"><button class="btn-up"><span class="fa fa-arrow-up"></span></button></div>
+    </div><!--/.cat-->
+    
+  </div>
+</div>
+
+<div class="popular">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+        <h2 class="block-header">Популярные товары</h2>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1 arrows">
+        <button class="arrow-left arrow slick-prev"><span class="fa fa-play fa-rotate-180"></span></button>
+        <button class="arrow-right arrow slick-next"><span class="fa fa-play"></span></button>
+      </div> 
+    </div>
+    <div class="row gallery slick0">
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+    </div> <!--/.row.gallery-->
+  </div> <!--/.container-->
+</div><!--/.popular-->
+
+
+
+
+<div class="today">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+        <h2 class="block-header">Выбирают сегодня</h2>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1 arrows">
+        <button class="arrow-left arrow slick-prev"><span class="fa fa-play fa-rotate-180"></span></button>
+        <button class="arrow-right arrow slick-next"><span class="fa fa-play"></span></button>
+      </div> 
+    </div>
+    <div class="row gallery slick0">
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+    </div> <!--/.row.gallery-->
+  </div> <!--/.container-->
+</div><!--/.today-->
+
+
+<div class="interest">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+        <h2 class="block-header">Вас может заинтересовать</h2>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1 arrows">
+        <button class="arrow-left arrow slick-prev"><span class="fa fa-play fa-rotate-180"></span></button>
+        <button class="arrow-right arrow slick-next"><span class="fa fa-play"></span></button>
+      </div> 
+    </div>
+    <div class="row gallery slick0">
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb asdasd</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 000 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt="">
+          <h2 class="header">Samsung Galaxy S7 32Gb</h2>
+          <p class="category">Мобильные телефоны</p>
+          <p class="price text-center">от 44 540 руб</p>
+          <p class="store-count text-center">48 магазинов</p>
+        </div>
+      </div>
+    </div> <!--/.row.gallery-->
+  </div> <!--/.container-->
+</div><!--/.interest-->
+
+
+<div class="beforefooter">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <a class="logo" href="#">Atlaide<span class="black">tev.lv</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+          <h2 class="block-header">Недавно смотрели</h2>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1 arrows">
+        <button class="arrow-left arrow slick-prev"><span class="fa fa-play fa-rotate-180"></span></button>
+        <button class="arrow-right arrow slick-next"><span class="fa fa-play"></span></button>
+      </div>
+    </div>
+    <div class="row footer-gallery gallery">
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+      <div class="col-md-6 col-lg-3 footer-gallery-item">
+        <div class="item-block"><img src="img/iPhone-7 Plus Black.png" alt=""> 
+        </div>     
+      </div>
+    </div><!--/.gallery-->
+    <div class="row footer-info">
+      
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		loadCSS("css/fonts.min.css"); 
+		loadCSS("css/libs.min.css"); 
+		loadCSS("css/main.min.css");            
+	</script>
+
+	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+	<script>var ms=document.createElement("link");ms.rel="stylesheet";
+		// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	</script>
+
+	<!-- Load Scripts -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+</body>
+</html>
