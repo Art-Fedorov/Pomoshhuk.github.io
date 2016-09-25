@@ -37,9 +37,7 @@ $(document).ready(function() {
         rows: 1,
         slidesToShow: 2,
         slidesToScroll: 2,
-        infinite: true,
-        dots: true,
-        
+        infinite: true,        
       }
     },
     {
