@@ -1,17 +1,11 @@
 $(document).ready(function() {
   
+  $('.navbar-menu .nav li').hover(function(){
+    $('.fordropdown').show();
+  },function(){
+    $('.fordropdown').hide();
+  });
 
-    $('.navbar-menu .nav li').hover(function(){
-      var html=$(this).find('.dropdown').html();
-      $('.fordropdown .place .dropdown').html(html);
-    });
-    // $(".dropdown").width($(window).width());
-    // $(window).resize(function(){$(".dropdown-menu").width($(window).width());});
-    // $('.navbar-menu .nav li').hover(function(){
-    //   $(this).find('.dropdown').show();
-    // },function(){
-    //   $(this).find('.dropdown').hide();
-    // });
   
 
   /*Все категории*/
@@ -250,6 +244,10 @@ $(document).ready(function() {
       }
     }]
   });
+
+
+
+   /*HISTORY SEARCH*/
     var left= $('#topmenu-form').offset().left;
     $('.history p span').css("margin-left",left+"px");
    $('.form-group input').on('click',
@@ -294,4 +292,18 @@ function getElementPosition(elemId)
     }
 
     return {"left":l, "top":t, "width": w, "height":h};
+}
+
+
+function MenuOpenCloseErgoTimer (dDelay, fActionFunction, node)
+{
+    if (typeof this.delayTimer == "number")
+    {
+        clearTimeout (this.delayTimer);
+        this.delayTimer = '';
+    }
+    if (node)
+        this.delayTimer     = setTimeout (function() { fActionFunction (node); }, dDelay);
+    else
+        this.delayTimer     = setTimeout (function() { fActionFunction (); }, dDelay);
 }
