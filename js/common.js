@@ -71,13 +71,22 @@ $(document).ready(function() {
       breakpoint: 1200,
       settings: {
         rows: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,        
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        rows: 1,
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,        
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
