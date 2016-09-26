@@ -1,4 +1,28 @@
 $(document).ready(function() {
+  
+
+
+    $(".dropdown").width($(window).width());
+    $(window).resize(function(){$(".dropdown-menu").width($(window).width());});
+    $('.navbar-menu .nav li').hover(function(){
+      $(this).find('.dropdown').show();
+    },function(){
+      $(this).find('.dropdown').hide();
+    });
+  
+
+  /*Все категории*/
+  $('.cat-up').click(function(){
+    $('.row.cat').slideUp('slow', function() {
+      
+    });
+    $('.allcat').slideDown('slow', function() {
+      
+    });
+    $('html, body').animate({
+        scrollTop: $(".row.cat").offset().top
+    }, 'slow');
+  });
   $('.allcat .hamb, .categories .sub').click(function(){
 
     $('.row.cat').slideDown('slow', function() {
@@ -11,17 +35,29 @@ $(document).ready(function() {
         scrollTop: $(".allcat").offset().top
     }, 'slow');
   });
-  $('.btn-up').click(function(){
-    $('.row.cat').slideUp('slow', function() {
-      
-    });
-    $('.allcat').slideDown('slow', function() {
-      
-    });
-    $('html, body').animate({
-        scrollTop: $(".row.cat").offset().top
-    }, 'slow');
-  });
+
+  /*Регистрация*/
+  $('.reg .header-item p').click(function () {
+    var register=$(this).parent();
+    var enter=$(this).parent();
+    if (register.hasClass('register'))
+    {
+      register.addClass('active');
+      $('.reg .forms .register').addClass('active');
+      $('.reg .header-item.enter').removeClass('active');
+      $('.reg .forms .enter').removeClass('active');
+    }
+    if (enter.hasClass('enter'))
+    { 
+      enter.addClass('active');
+      $('.reg .forms .enter').addClass('active');
+      $('.reg .header-item.register').removeClass('active');
+      $('.reg .forms .register').removeClass('active');
+    }
+  })
+
+
+  /*слайдеры*/
   $('.popular .gallery').slick({
     rows: 2,
     slidesToShow: 4,
