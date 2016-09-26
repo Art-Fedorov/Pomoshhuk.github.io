@@ -1,12 +1,36 @@
-$(document).ready(function() {
-  
-  $('.navbar-menu .nav li').hover(function(){
-    $('.fordropdown').show();
-  },function(){
-    $('.fordropdown').hide();
-  });
+$(function(){
 
+  /*Выезжающее меню*/
+  $('.navbar-menu .nav li').hover(
+    function(){
+      $(this).find('.dropdown').fadeIn();
+      $(this).addClass('dropped');
+    },
+    function(){
+      $(this).find('.dropdown').hide();
+      $(this).removeClass('dropped');
+    });
+
+  $('.navbar-menu .navbar-nav').hover(function(){
+    $('.fordropdown').slideDown();
+    },function(){
+      $(this).find('.dropdown').hide();
+      $('.fordropdown').hide();
+    });
+
+  $('.fordropdown').mouseover(function(){
+      $(this).css('display','block');
+    });
   
+
+  /*Вставка изображения где его нет*/
+  $('img').each(function(){
+    if ($(this).attr('src').length==0)
+    {
+      console.log('asd');
+      $(this).attr('src','img/no-image.png'); 
+    }
+  });
 
   /*Все категории*/
   $('.cat-up').click(function(){
@@ -247,63 +271,34 @@ $(document).ready(function() {
 
 
 
-   /*HISTORY SEARCH*/
-    var left= $('#topmenu-form').offset().left;
-    $('.history p span').css("margin-left",left+"px");
-   $('.form-group input').on('click',
-      function(){
+  /*HISTORY SEARCH*/
+  var left= $('#topmenu-form').offset().left+15;
+  $('.history p span').css("margin-left",left+"px");
+  $('.form-group input').on('click', function(){
+    if($('.history').css('display')=='block')
+      $('.history').slideUp();
+    else 
+      $('.history').slideDown();
+  });
+
+  $('.history-item').on('click',
+    function(){
         if($('.history').css('display')=='block')
+        { 
           $('.history').slideUp();
-        else 
-          $('.history').slideDown();
-
-      });
-   $('.history-item').on('click',
-      function(){
-        if($('.history').css('display')=='block')
-         { $('.history').slideUp();
-             $('.form-group input').val($(this).text());
-     }
-
+          $('.form-group input').val($(this).text());
+        }
         else {
           $('.history').slideDown();
-         }
-      });
-    
+        }
+    });
+
+  $('main').on('click',
+    function(){
+      if($('.history').css('display')=='block')
+       { $('.history').slideUp();  }
+  
+    });
+  
+
 });
-
-
-
-function getElementPosition(elemId)
-{
-    var elem = document.getElementById(elemId);
-  
-    var w = elem.offsetWidth;
-    var h = elem.offsetHeight;
-  
-    var l = 0;
-    var t = 0;
-  
-    while (elem)
-    {
-        l += elem.offsetLeft;
-        t += elem.offsetTop;
-        elem = elem.offsetParent;
-    }
-
-    return {"left":l, "top":t, "width": w, "height":h};
-}
-
-
-function MenuOpenCloseErgoTimer (dDelay, fActionFunction, node)
-{
-    if (typeof this.delayTimer == "number")
-    {
-        clearTimeout (this.delayTimer);
-        this.delayTimer = '';
-    }
-    if (node)
-        this.delayTimer     = setTimeout (function() { fActionFunction (node); }, dDelay);
-    else
-        this.delayTimer     = setTimeout (function() { fActionFunction (); }, dDelay);
-}
