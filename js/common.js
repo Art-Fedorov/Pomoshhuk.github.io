@@ -130,10 +130,21 @@ $(function(){
 
   $('.table .table-row.row-hidden').hide();
   /*Карточка товара показать все*/
-  $('.stores .more .viewall').click(function(){
-    $('.table .table-row.row-hidden').slideDown('fast'); 
+  $('.stores .more .viewall.view').on('click',function(){
+      $('.table .table-row.row-hidden').slideDown('fast');
+       $(this).hide();
+   $('.stores .more .viewall.hideall').show();
 
   });
+    $('.stores .more .viewall.hideall').on('click',function(){
+
+      $('.table .table-row.row-hidden').slideUp('fast');
+    
+    $(this).hide();
+    $('.stores .more .viewall.view').show();
+  });
+
+
 
     /*HISTORY SEARCH*/
   var left= $('#topmenu-form').offset().left+15;
