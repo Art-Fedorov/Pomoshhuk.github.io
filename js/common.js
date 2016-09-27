@@ -1,17 +1,30 @@
 $(function(){
 
+    /*scroll to top*/
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        /*появление кнопки регулировать тут*/
+        if (scroll >= 1000) {
+          $('.scroll-to-top').fadeIn(400);
+        } else {
+          $('.scroll-to-top').fadeOut(400);
+        }
+      });
+    $('.scroll-to-top').click(function(){
+      $('html, body').animate({scrollTop : 0},400);
+    });
   /*datepicker*/
    $('.datepicker').datepicker(
     { 
       dateFormat: 'dd.mm.yy',
       onSelect: function(dateText){
         $('.calendar .date').text(dateText);
-        $('.datepicker').slideUp('500');
+        $('.datepicker').fadeOut('500');
       }
      });
 
-  $('.popup .calendar img').click(function(){
-    $('.datepicker').slideToggle('500');
+  $('.popup-form .calendar img').click(function(){
+    $('.datepicker').fadeToggle('500');
   });
 
 
@@ -311,9 +324,9 @@ $(function(){
     slidesToShow: 4,
     slidesToScroll: 4,
     dots: false,
-    appendArrows: $('.footer .arrows'),
-    prevArrow:  $('.footer .arrows .arrow-right'), 
-    nextArrow:  $('.footer .arrows .arrow-left'),
+    appendArrows: $('.analog .arrows'),
+    prevArrow:  $('.analog .arrows .arrow-right'), 
+    nextArrow:  $('.analog .arrows .arrow-left'),
       responsive: [
 
     {
