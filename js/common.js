@@ -1,8 +1,31 @@
 $(function(){
 
+  /*datepicker*/
+   $('.datepicker').datepicker(
+    { 
+      dateFormat: 'dd.mm.yy',
+      onSelect: function(dateText){
+        $('.calendar .date').text(dateText);
+        $('.datepicker').slideUp('500');
+      }
+     });
+
+  $('.popup .calendar img').click(function(){
+    $('.datepicker').slideToggle('500');
+  });
 
 
-  /*Выезжающее подменю*/
+
+  /*popup-form*/
+  $('.sale-buy').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+  /*banner close*/
+  $('.banner .fa.close').click(function(){
+    $('.banner').hide();
+  })
+  /*navbar-menu dropdown*/
   $('.navbar-menu .nav li').click(
       function(){
         if ($(window).width() >1200) {
